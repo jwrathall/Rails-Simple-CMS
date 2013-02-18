@@ -1,0 +1,16 @@
+<%@page_title = "Page Create"%>
+<%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
+
+<div class="section update">
+  <h2>Create Section</h2>
+
+  <%= form_for(:page, :url => {:action => 'create'}) do |f| %>
+  
+	<%=render(:partial => 'form', :locals => {:f => f})%>
+    
+    <div class="form-buttons">
+      <%= submit_tag("Create Page") %>
+    </div>
+    
+  <% end %>
+</div>
