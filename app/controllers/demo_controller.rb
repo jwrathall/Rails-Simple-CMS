@@ -1,4 +1,7 @@
 class DemoController < ApplicationController
+
+  layout 'admin'
+ 
   def index
   #implied default render statement
   #below is the explicit statement
@@ -16,6 +19,18 @@ class DemoController < ApplicationController
   
   def other_hello
   	render(:text => 'Hello everyone')
+  end
+  
+  def javascript
+  
+  end
+  
+  def text_helpers
+  
+  end
+  
+  def escape_output
+  
   end
   
 end

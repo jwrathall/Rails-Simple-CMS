@@ -25,7 +25,7 @@
 	<key>RecentItemsVisible</key>
 	<true/>
 	<key>ScratchpadItemsExpanded</key>
-	<false/>
+	<true/>
 	<key>ScratchpadItemsVisible</key>
 	<true/>
 	<key>ShowSCMData:jeffwrathall</key>
@@ -35,6 +35,6 @@
 	<key>ViewSplitterPosition:jeffwrathall</key>
 	<real>0.18286813795566559</real>
 	<key>WindowFrame:jeffwrathall:displays([(0, 0), (1280, 800)])</key>
-	<string>rect(60,198,759,1237)</string>
+	<string>rect(47,123,746,1162)</string>
 </dict>
 </plist>
