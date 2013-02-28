@@ -1,8 +1,8 @@
 	<%= error_messages_for(@page)%>
 	<table summary="Page form fields">
        <tr>
-        <th><%=f.label(:subject_id, "Subject Id")%></th>
-        <td><%= f.select(:subject_id, @sections.all.collect{|s| [s.name,s.id]}) %></td>
+        <th><%=f.label(:subject_id, "Subject")%></th>
+        <td><%= f.select(:subject_id, @subjects.all.collect{|s| [s.name,s.id]}) %></td>
       </tr>
       <tr>
         <th><%=f.label(:name)%></th>

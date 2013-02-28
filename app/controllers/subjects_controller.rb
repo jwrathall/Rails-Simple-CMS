@@ -1,6 +1,9 @@
 class SubjectsController < ApplicationController
 
   layout 'admin'
+  
+  before_filter :confirm_login
+  
   #if a person just types "/subjects into the address bar this will execute by default"
   def index
   	list

@@ -14,4 +14,5 @@ class Subject < ActiveRecord::Base
   scope :visible, where(:is_visible => true)
   scope :invisible, where(:is_visible => false)
   scope :search, lambda {|query| where(["name LIKE ?", "%#{query}%"])}
+
 end

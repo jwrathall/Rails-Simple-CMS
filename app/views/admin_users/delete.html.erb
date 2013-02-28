@@ -1,0 +1,16 @@
+<%@page_title = "Delete Admin User: #{@user.fullname} "%>
+<%= link_to("<< Back to List", {:action => 'list'}, :class => 'back-link') %>
+
+<div class="admin user delete">
+  <h2>Delete Admin User</h2>
+
+  <%= form_for(:page, :url => {:action => 'destroy', :id => @user.id}) do |f| %>
+
+	<p>Are you sure you wish to delete this user?</p>
+    <p class="reference-name"><%=@user.fullname%></p>
+    <div class="form-buttons">
+      <%= submit_tag("Delete Admin User") %>
+    </div>
+    
+  <% end %>
+</div>

@@ -8,7 +8,7 @@ class Page < ActiveRecord::Base
   validates_presence_of :name
   validates_length_of :name, :maximum => 50
   validates_presence_of :permalink
-  validates_length_of :permalink, :withing => 3..100
+  validates_length_of :permalink, :within => 3..100
   validates_uniqueness_of :permalink
   #for unique values by subject, :scope => :subject_id
 end

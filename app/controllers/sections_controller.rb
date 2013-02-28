@@ -1,5 +1,8 @@
 class SectionsController < ApplicationController
 	layout 'admin'
+	
+	before_filter :confirm_login
+	
 	def index
 		list
 		render('list')
